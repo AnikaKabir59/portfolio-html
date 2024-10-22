@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Comatible" content="ie=edge"/>
+    <meta name="author" content="anika kabir"/>
+    <meta name="keywords" content="portfolio,html,anika kabir"/>
+    <meta name="description"content="Anika Kabir is a student.."/>
     <title>My Portfolio</title>
+    <!--font-awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-color: rgb(85, 253, 127);
+        font-family: "Roboto", sans-serif;
+    }
+        </style>
 </head>
 <body>
     <!--navigation-->
+    <header>
     <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -15,67 +32,156 @@
        <li> <a href="#contact">Contact me</a></li>
     </ul>
     </nav>
-    
+   </header>
    
-    <!--intro-->
-  <header id="intro">
-  <h1>Anika Kabir</h1>
-  <p><em>Student</em></p>
-  <img src="./images/IMG_20230821_150714_130.jpg" alt="Anika" height ="150"/>
-  <hr>
+    <main>
+        <!--intro-->
+  <section id="intro">
+    <h1>Anika Kabir</h1>
+    <p><em>Student</em></p>
+    <img src="./images/IMG_20230821_150714_130.jpg" alt="Anika" height ="150"/>
+    <hr>
+  
+  </section>
+   
+  
+  <!--about me-->
+  <section id="about">
+      <h2>About me</h2>
+      <p><strong>Experience:1 year experience in coding.</strong></p>
+      <p> Education:BSC </p>
+  </section>
+   
+  
+  <!--skill-->
+  <section id="skills" >
+  <p>Computing</p>
+  </section>
+  <table border="1" cellpadding="5" cellspacing="0"><thead>
+      <tr>
+          <th> Technology</th>
+         <th>Proficiency</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td> HTMl</td>
+         <td rowspan="2">Expert</td>
+      </tr>
+      <tr>
+        <td> CSS</td>
+     
+    </tr>
+      <tr>
+          <td>JavaScript</td>
+          <td>Basic</td>
+      </tr>
+  </tbody>
+          
+  
+  </table>
+  <h3>Skill progress</h3>
+  <label for="htmlProgress">HTML:</label>
+  <progress id="htmlProgress" value="90" max="100">90%</progress>
+  
+  <label for="cssProgress">CSS:</label>
+  <progress id="cssProgress" value="50" max="100">50%</progress>
 
-</header>
- 
+  <div>
+    <h3>Experience</h3>
 
-<!--about me-->
-<section id="about">
-    <h2>About me</h2>
-    <p><strong>Experience:1 year experience in coding.</strong></p>
-    <p> Education:BSC </p>
-</section>
- 
-
-<!--skill-->
-<section id="skills" >
-<table><th></th>
-    <td></td>
-</table>
-
-
-
-</section>
-<section id="projects">
-    <h2>Project</h2>
-    <ol>
-        <li>Portfolio website</li>
-        <li>E-commerce website</li>
-        <li>Blog website</li>
-    </ol>
-</section>
-<a target ="blank" href="https://github.com/AnikaKabir59/portfolio-html">Portfolio website</a>
-
-  <!--contact me-->
-<section id="contact">
-    <h2>Contact me</h2>
-    <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name"/>
+    <label for="experienceLevel">Experience</label>
+    <meter id="experienceLevel" min="0" max="10" value="5">5 years</meter>
+  
 </div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"requard/>
-        
-        <label for="message">Message</label>
-        <textarea name="Message" id="message" cols="10" rows="10"></textarea>/>
+  </section>
+  <!--project-->
+  <section id="projects">
+      <h2>Project</h2>
+      <ol>
+          <li>Portfolio website</li>
+          <li>E-commerce website</li>
+          <li>Blog website</li>
+      </ol>
+  </section>
+  <video width="320" controls>
+    <source src="video/sky.mp4" type="video/mp4" >
+    Your browser do not support this type of video.
+  </video>
+  <a target ="blank" href="https://github.com/AnikaKabir59/portfolio-html">Portfolio website</a>
+  
+  
+  
+  <!--contact me-->
+  <section>
+  <div id="contact">
+      <h2>Contact me</h2>
+      <div><label for="name">Name</label>
+          <input type="text" id="name" name="name"/></div>
+          
+  <div><label for="email">Email</label>
+      <input type="email" id="email" name="email"requard/></div>
+     
+      <div><label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="55" requard/>
+    </div>
+    <div>
+        <label for="website">Website</label>
+        <input type="url"id="website" name="website" pattern="https?://.+"/>
+    </div>
+          <div>
+            <lebel for="image">Upload image</lebel>
+            <input type="file" id="image" name="image" accept="image/*"/>
+          </div>
+      <div>
+        <input type="date" id="email" name="email"requard/></div>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-    </form>
-</section>
-
+          <div><label for="message">Message</label>
+              <textarea name="Message" id="message" cols="10" rows="10"></textarea></div>
+          <div>
+            <label for"subject">Subject:</label>
+            <select name="subject" id="subject">
+           <option value"inquiry" >Inquiry</option>  
+           <option value"feedback">Feedback</option> 
+           <option value"job">Job opportunity</option>    
+            </select>
+          </div>
+  
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+      </form>
+  </section>
+  
+    </main>
   <!--footer-->
-<p>Copyright reserved  by @Copyright Anika Kabir</p>
+  <footer>
+    <p>Copyright reserved  by @Copyright Anika Kabir</p>
 <a href="tel:0171234567">Call me</a>
 <a href="mailto:anika@gmail.com">Email me</a>
+<!--map-->
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28681.599565333858!2d88.44537001879037!3d26.027013139881632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4c00fae515037%3A0xc354ad492e9e6874!2sThakurgaon!5e0!3m2!1sen!2sbd!4v1729612602797!5m2!1sen!2sbd" title="Home map"width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
 <a href="https">Visit my youtube channel</a>
+<h3>Follow me</h3>
+<ul>
+    <li>
+        <a href="https://www.facebook.com/studywithanis"target="blank"></a>
+        <i class="fa-brands fa-facebook"></i>
+       Facebook page
+    </li>
+    <li>
+        <a href="https://www.facebook.com/studywithanis"target="blank"></a>
+        <i class="fa-brands fa-square-youtube"></i>
+       Youtube Channel
+    </li>
+    <li>
+        <a href="https://www.facebook.com/studywithanis"target="blank"></a>
+        <i class="fa-brands fa-linkedin"></i>
+       Linkedin
+    </li>
+</ul>
+  </footer>
+
 </body>
 </html>
