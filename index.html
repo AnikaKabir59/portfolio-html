@@ -113,21 +113,36 @@
   
   <!--contact me-->
   <section>
+   
   <div id="contact">
       <h2>Contact me</h2>
       <div><label for="name">Name</label>
           <input type="text" id="name" name="name"/></div>
+
+<label for="programing">Favourite programming</label>
+<input list="language" id="programming" name="programming" required/>
+
+<datalist id="language">
+  <option value="C"></option>  
+  <option value="Java"></option>  
+  <option value="Python"></option>  
+  <option value="C++"></option>  
+</datalist>
+          <div>
+            <label for="favorite">Favorite Color:</label>
+            <input type="color" id="favorite" name="favorite" value="#fff" requard/></div>
           
   <div><label for="email">Email</label>
       <input type="email" id="email" name="email"requard/></div>
-     
-      <div><label for="age">Age</label>
+      <legend>Person</legend>
+      <fieldset><div><label for="age">Age</label>
         <input type="number" id="age" name="age" min="18" max="55" requard/>
     </div>
     <div>
         <label for="website">Website</label>
         <input type="url"id="website" name="website" pattern="https?://.+"/>
-    </div>
+    </div></fieldset>
+      
           <div>
             <lebel for="image">Upload image</lebel>
             <input type="file" id="image" name="image" accept="image/*"/>
